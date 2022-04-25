@@ -1,15 +1,14 @@
 
-var fs = require('fs')
-  , url = require('url')
+var url = require('url')
   , querystring = require('querystring')
   , yaml = require('js-yaml')
-  , path = require('path')
+  , data = require('./data')
   ;
+
 
 module.exports = Referer
 
-var dataFile = fs.readFileSync(path.join(__dirname, 'data', 'referers.yml'))
-var REFERERS = loadReferers(yaml.load(dataFile.toString()))
+var REFERERS = loadReferers(yaml.load(data.referer_yml_str))
 
 function loadReferers (source) {
   var referers_dict = {}

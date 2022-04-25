@@ -1,3 +1,4 @@
+exports.referer_yml_str = `
 # #######################################################################################################
 #
 # ALL SUPPORTED REFERERS
@@ -4081,3 +4082,4 @@ paid:
     domains:
       - zedo.com
       - z1.zedo.com
+`

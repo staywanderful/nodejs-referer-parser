@@ -1,0 +1,2 @@
+declare module "referer-parser"
+
